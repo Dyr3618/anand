@@ -12,7 +12,7 @@ public class HelloApplication {
 	@GetMapping("/getmsg")
 	public String getMsg()
 	{
-		return "Hello Aws !!!!!";
+		return "Hello Aws !!!!!  this is for testing";
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(HelloApplication.class, args);
