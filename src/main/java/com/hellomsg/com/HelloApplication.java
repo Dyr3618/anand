@@ -12,8 +12,11 @@ public class HelloApplication {
 	@GetMapping("/getmsg")
 	public String getMsg()
 	{
+		 
+		DynamodbConnection db=new DynamodbConnection();
+		
+		db.makeDBCall();
 		return "Hello Aws !!!!!  this is for testing";
-		makeDBCall
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(HelloApplication.class, args);
