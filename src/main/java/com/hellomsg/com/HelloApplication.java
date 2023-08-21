@@ -13,6 +13,7 @@ public class HelloApplication {
 	public String getMsg()
 	{
 		return "Hello Aws !!!!!  this is for testing";
+		makeDBCall
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(HelloApplication.class, args);
