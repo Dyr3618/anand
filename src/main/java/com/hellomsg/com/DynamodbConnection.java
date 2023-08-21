@@ -23,6 +23,7 @@ public class DynamodbConnection { // Added "class" keyword here
             .withString("name", "John Doe");
 
         table.putItem(item);
+        System.out.println("Inserted successfully");
     }
 }
 
