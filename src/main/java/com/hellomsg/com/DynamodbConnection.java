@@ -9,7 +9,7 @@ import com.amazonaws.services.dynamodbv2.document.Table;
 
 public class DynamodbConnection { // Added "class" keyword here
     public void makeDBCall() {
-        BasicAWSCredentials credentials = new BasicAWSCredentials("AKIAVRS5FCV2XRXVA2WE", "A0Y/e+HFCiuAZ1g6RCrjBybAnPAqKyyqIfbJKmaz");
+        BasicAWSCredentials credentials = new BasicAWSCredentials("");
         AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard()
             .withCredentials(new AWSStaticCredentialsProvider(credentials))
             .withRegion(Regions.US_EAST_1)
